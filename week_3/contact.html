@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contact - Monroeu">
+  <title>Monroeu - Contact</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f8fa;color:#122}
+    .wrap{width:min(900px,94%);margin:1rem auto}
+    nav{background:#0b5; padding:0.6rem;border-radius:6px}
+    nav a{color:#033;text-decoration:none;margin-right:1rem;font-weight:700}
+    header,main,footer{background:#fff;padding:1rem;border-radius:6px;margin-bottom:1rem}
+    form{background:#f9fbfd;padding:1rem;border:1px solid #e0e8ef;border-radius:6px}
+    label{display:block;margin-bottom:0.25rem;font-weight:600}
+    input,textarea,select,button{width:100%;padding:0.6rem;margin-bottom:0.8rem;border:1px solid #cdd7e1;border-radius:6px;box-sizing:border-box}
+    .inline{display:inline-block;width:auto;margin-right:1rem}
+    .required{color:#b31}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Contact Us</h1>
+      <p>Send a message to the Monroeu team.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <article>
+        <h2>Get in touch</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Contact details</legend>
+
+            <label for="name">Name <span class="required">*</span></label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email <span class="required">*</span></label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="subject">Subject <span class="required">*</span></label>
+            <input id="subject" name="subject" type="text" required>
+
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <label for="priority">Priority</label>
+            <select id="priority" name="priority">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+            <div class="inline">
+              <input id="contact-email" type="radio" name="contact-method" value="email" checked>
+              <label for="contact-email">Email</label>
+            </div>
+            <div class="inline">
+              <input id="contact-phone" type="radio" name="contact-method" value="phone">
+              <label for="contact-phone">Phone</label>
+            </div>
+
+            <label>
+              <input id="subscribe" type="checkbox" name="subscribe" value="yes">
+              Subscribe to updates
+            </label>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Monroeu — Contact</p>
+    </footer>
+  </div>
+</body>
+</html>
