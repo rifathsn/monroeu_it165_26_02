@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #223;
+    }
+
+    .page {
+      width: min(1000px, 95%);
+      margin: 2rem auto;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2e7d32;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+    }
+
+    .brand {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .content {
+      background: #fff;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="brand">My Site</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <h1>Flexbox Navigation Bar</h1>
+      <p>This navigation bar is laid out using Flexbox so the brand and links align evenly.</p>
+    </main>
+  </div>
+</body>
+</html>
