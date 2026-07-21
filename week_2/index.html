@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A semantic HTML example about space exploration and a contact form.">
+  <meta name="author" content="IT 165 Student">
+  <title>Space Exploration | IT 165 Week 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #f4f7fb;
+      color: #223;
+    }
+
+    header, nav, main, footer {
+      width: min(900px, 90%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 2rem 0 1rem;
+    }
+
+    nav {
+      background: #1f4e79;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: bold;
+    }
+
+    main {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    section, article {
+      margin-bottom: 1.5rem;
+    }
+
+    figure {
+      margin: 1rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    form {
+      background: #f9fbfd;
+      padding: 1.25rem;
+      border: 1px solid #dce5ef;
+      border-radius: 8px;
+    }
+
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin: 0 0 1rem;
+    }
+
+    legend {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+
+    .required {
+      color: #c0392b;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 0.9rem;
+      border: 1px solid #cdd7e1;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background: #1f4e79;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0 2rem;
+      color: #556;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Space Exploration: The Next Frontier</h1>
+    <p>Discover why humans are still fascinated by the universe beyond Earth.</p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <a href="#overview">Overview</a>
+    <a href="#missions">Missions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <article id="overview">
+      <section>
+        <h2>Why Space Exploration Matters</h2>
+        <p>Space exploration helps scientists learn about the origins of our solar system, improve technology, and inspire future generations. Every mission adds new knowledge that can be used on Earth as well.</p>
+        <p>Exploring space also pushes human creativity and problem-solving to new levels. From better medical tools to stronger materials, the benefits of space research often reach everyday life.</p>
+      </section>
+
+      <section>
+        <h2>What Makes It Exciting</h2>
+        <p>There are many reasons people love space exploration. It combines science, adventure, and the possibility of discovering something never seen before.</p>
+        <ul>
+          <li>It expands human knowledge.</li>
+          <li>It encourages teamwork and innovation.</li>
+          <li>It can lead to life-changing discoveries.</li>
+          <li>It inspires students to study science.</li>
+          <li>It helps us understand our planet better.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Learn More</h2>
+        <p>For a deeper look at current space missions, visit the <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA website</a>.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?auto=format&fit=crop&w=900&q=80" alt="A view of Earth from space showing the planet and atmosphere">
+          <figcaption>A beautiful view of Earth from space, reminding us how small our world is.</figcaption>
+        </figure>
+      </section>
+    </article>
+
+    <article id="missions">
+      <h2>Notable Space Missions</h2>
+      <p>Some missions have changed the way people think about space forever. They have helped scientists discover new planets, study distant galaxies, and improve our understanding of the universe.</p>
+      <p>From the Moon landings to modern Mars rovers, each mission has contributed to the story of exploration that continues today.</p>
+    </article>
+
+    <section id="contact">
+      <h2>Contact the Mission Desk</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send us a message</legend>
+
+          <label for="name">Name <span class="required">*</span></label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email <span class="required">*</span></label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="subject">Subject <span class="required">*</span></label>
+          <input id="subject" name="subject" type="text" required>
+
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <label for="priority">Priority</label>
+          <select id="priority" name="priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred contact method</legend>
+          <label>
+            <input type="radio" name="contact-method" value="email" checked>
+            Email
+          </label>
+          <label>
+            <input type="radio" name="contact-method" value="phone">
+            Phone
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label>
+            <input type="checkbox" name="subscribe" value="yes">
+            Subscribe to updates
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 IT 165 Week 2 Assignment</p>
+  </footer>
+</body>
+</html>
